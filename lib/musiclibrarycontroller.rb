@@ -34,6 +34,11 @@ def list_artists
     end
   end
 
+def list_genres
+  Genre.all.sort_by{|x| x.name}.each_with_index do |genre,index|
+      puts "#{index+1}. #{genre.name}"
+    end
+  end
 
 
 
