@@ -34,6 +34,7 @@ elsif choice == 'exit'
   break
 end
 end
+end
 
 def list_songs
 Song.all.sort_by{|x| x.name}.each_with_index do |song,index|
