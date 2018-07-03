@@ -42,7 +42,7 @@ def list_genres
 
 def list_songs_by_artist
 puts "Please enter the name of an artist:"
-gets.strip
+choice = gets.strip
 end
 
 
