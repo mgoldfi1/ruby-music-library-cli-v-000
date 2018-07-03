@@ -17,7 +17,7 @@ puts "To list all of the songs of a particular genre, enter 'list genre'."
 puts "To play a song, enter 'play song'."
 puts "To quit, type 'exit'."
 puts "What would you like to do?"
-choice = gets.strip
+gets.strip
 break if gets.strip == "exit"
 end
 end
