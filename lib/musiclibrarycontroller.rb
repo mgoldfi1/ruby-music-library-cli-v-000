@@ -29,7 +29,7 @@ Song.all.sort_by{|x| x.name}.each_with_index do |song,index|
 end
 
 def list_artists
-  Artist.all.sort_by{|x| x.name}.each_with_index do |song,index|
+  Artist.all.sort_by{|x| x.name}.each_with_index do |artist,index|
       puts "#{index+1}. #{artist.name}"
     end
   end
