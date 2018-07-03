@@ -37,7 +37,6 @@ def genres
   songs.map do |x|
     x.genre
   end.uniq
-song.artist
 end
 
 
