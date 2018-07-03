@@ -59,13 +59,14 @@ def self.new_from_filename(filename)
    x = Artist.find_or_create_by_name(artist_name)
    y = Genre.find_or_create_by_name(genre_name)
    new_song = self.new(song_name, x, y)
-
+   new_song
+   
   #  new_song.artist = x
   #  new_song.genre = y
-
 end
 
-
+def self.create_from_filename(filename)
+  self.new_from_filename(filename)
 
 
 
