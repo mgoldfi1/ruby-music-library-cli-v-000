@@ -23,7 +23,7 @@ end
 end
 
 def list_songs
-    binding.pry
+
   Song.all.sort_by{|x| x.name}.each_with_index do |song,index|
     "#{index+1}. #{song.name}"
   end
