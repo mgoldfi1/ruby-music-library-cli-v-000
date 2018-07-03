@@ -1,3 +1,4 @@
+
 require 'pry'
 class Song
 attr_accessor :name
@@ -63,6 +64,12 @@ def self.new_from_filename(filename)
   #  new_song.genre = y
 
 end
+
+
+  artist.add_song(self)
+end
+
+
 
 
 

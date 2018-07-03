@@ -1,5 +1,6 @@
 class Artist
-  extend Concerns::Findable
+
+extend Concerns::Findable
 attr_accessor :name, :songs
 
 
@@ -37,6 +38,7 @@ def genres
   songs.map do |x|
     x.genre
   end.uniq
+song.artist
 end
 
 
