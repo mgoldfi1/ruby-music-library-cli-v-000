@@ -25,7 +25,7 @@ end
 def list_songs
 
   Song.all.sort_by{|x| x.name}.each_with_index do |song,index|
-    puts "#{index+1}. #{song.name}"
+    puts "#{index+1}. #{song.artist} - #{song.name} - #{song.genre}"
   end
 
 end
