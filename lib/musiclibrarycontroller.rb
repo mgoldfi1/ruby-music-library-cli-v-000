@@ -43,9 +43,10 @@ def list_genres
 def list_songs_by_artist
 puts "Please enter the name of an artist:"
 choice = gets.strip
-Song.all.sort_by{|x| x.name}.each_with_index do |song,index|
-  if song.artist.name == choice
-    puts "#{index}. #{song.name} - #{song.genre.name}"
+Arist.all.each do |x|
+  if x.name == choice
+    x.songs.each_with_index do |song,index|
+    puts "#{index+1}. #{song.name} - #{song.genre.name}"
   end
 end
 end
