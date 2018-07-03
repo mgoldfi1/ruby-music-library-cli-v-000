@@ -1,12 +1,12 @@
 #!/usr/bin/env ruby
-
+require 'pry'
 require_relative '../config/environment'
 class MusicLibraryController
 
 
 def intialize(path = "./db/mp3s/")
-  library = MusicImporter.new(path)
-  library
+  MusicImporter.new(path)
+
 end
 
 
