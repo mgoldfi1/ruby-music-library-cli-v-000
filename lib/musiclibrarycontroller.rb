@@ -17,7 +17,19 @@ puts "To list all of the songs of a particular genre, enter 'list genre'."
 puts "To play a song, enter 'play song'."
 puts "To quit, type 'exit'."
 puts "What would you like to do?"
-gets.strip
+choice = gets.strip
+if choice == 'list songs'
+  self.list_songs
+elsif choice == 'list artists'
+  self.list_artists
+elsif choice == 'list genres'
+  self.list_genres
+elsif choice == 'list artist'
+  self.list_songs_by_artist
+elsif choice == 'list genre'
+  self.list_songs_by_genre
+elsif choice == 'play song'
+  self.play_song
 break if gets.strip == "exit"
 end
 end
