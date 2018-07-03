@@ -40,7 +40,7 @@ def list_genres
     end
   end
 
-def list_songs_by_artist(artist)
+def list_songs_by_artist
   artist = gets.strip
 end
 
