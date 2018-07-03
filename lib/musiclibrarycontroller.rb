@@ -18,9 +18,6 @@ puts "To play a song, enter 'play song'."
 puts "To quit, type 'exit'."
 puts "What would you like to do?"
 choice = gets.strip
-if choice = 'list songs'
-  self.list_songs
-end
 break if gets.strip == "exit"
 end
 end
