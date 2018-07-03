@@ -30,7 +30,8 @@ elsif choice == 'list genre'
   self.list_songs_by_genre
 elsif choice == 'play song'
   self.play_song
-break if gets.strip == "exit"
+elsif choice == 'exit'
+  break
 end
 end
 
