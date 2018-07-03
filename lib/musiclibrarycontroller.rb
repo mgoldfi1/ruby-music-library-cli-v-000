@@ -53,7 +53,7 @@ end
 end
 
 def list_songs_by_genre
-puts "Please enter the genre:"
+puts "Please enter the name of a genre:"
 choice = gets.strip
 Artist.all.each do |x|
   if x.name == choice
