@@ -66,8 +66,6 @@ def self.new_from_filename(filename)
 end
 
 
-  artist.add_song(self)
-end
 
 
 
