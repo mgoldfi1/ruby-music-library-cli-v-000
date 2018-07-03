@@ -58,7 +58,7 @@ choice = gets.strip
 Genre.all.each do |x|
   if x.name == choice
     x.songs.sort_by{|x| x.name}.each_with_index do |song,index|
-    puts "#{index+1}. #{song.name} - #{song.genre.name}"
+    puts "#{index+1}. #{song.artist.name} - #{song.name}"
   end
 end
 end
