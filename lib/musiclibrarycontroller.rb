@@ -41,7 +41,7 @@ def list_genres
   end
 
 def list_songs_by_artist
-  artist = gets.strip
+"Please enter the name of an artist:"
 end
 
 
