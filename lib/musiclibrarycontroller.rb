@@ -45,7 +45,7 @@ puts "Please enter the name of an artist:"
 choice = gets.strip
 Artist.all.each do |x|
   if x.name == choice
-    x.songs.each_with_index do |song,index|
+    x.songs.sort_by{|x| x.name}.each_with_index do |song,index|
     puts "#{index+1}. #{song.name} - #{song.genre.name}"
   end
 end
