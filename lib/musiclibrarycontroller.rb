@@ -7,6 +7,7 @@ def initialize(path = "./db/mp3s")
 end
 
 def self.call
+  puts "Welcome, user"
 end
 
 
