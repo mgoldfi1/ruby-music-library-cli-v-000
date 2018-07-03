@@ -4,7 +4,6 @@ class MusicLibraryController
 
 def intialize(path)
   @path = path
-  binding.pry
   MusicImporter.new(path)
 
 end
