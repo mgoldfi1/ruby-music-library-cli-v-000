@@ -50,6 +50,7 @@ Arist.all.each do |x|
   end
 end
 end
+end
 
 
 
