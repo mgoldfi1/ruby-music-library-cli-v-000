@@ -23,14 +23,16 @@ end
 end
 
 def list_songs
-
-  Song.all.sort_by{|x| x.name}.each_with_index do |song,index|
+Song.all.sort_by{|x| x.name}.each_with_index do |song,index|
     puts "#{index+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
   end
-
 end
 
-
+def list_artists
+  Song.all.sort_by{|x| x.artist.name}.each_with_index do |song,index|
+      puts "#{index+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+    end
+  end
 
 
 
