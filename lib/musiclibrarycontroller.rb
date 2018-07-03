@@ -69,8 +69,10 @@ def play_song
   puts "Which song number would you like to play?"
   choice = gets.strip
   Song.all.sort_by{|x| x.name}.each do |y|
-    if Song.all.sort_by{|x| x.name}[choice-1] == y 
+    if Song.all.sort_by{|x| x.name}[choice-1] == y
       puts "Playing #{y.name} by #{y.artist.name}"
+    end
+  end
 end
 
 
