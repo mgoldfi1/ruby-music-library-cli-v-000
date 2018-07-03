@@ -55,7 +55,7 @@ end
 def list_songs_by_genre
 puts "Please enter the name of a genre:"
 choice = gets.strip
-Artist.all.each do |x|
+Genre.all.each do |x|
   if x.name == choice
     x.songs.sort_by{|x| x.name}.each_with_index do |song,index|
     puts "#{index+1}. #{song.name} - #{song.genre.name}"
