@@ -7,6 +7,7 @@ def initialize(path = "./db/mp3s")
 end
 
 def call
+loop do 
 puts "Welcome to your music library!"
 puts "To list all of your songs, enter 'list songs'."
 puts "To list all of the artists in your library, enter 'list artists'."
@@ -17,6 +18,8 @@ puts "To play a song, enter 'play song'."
 puts "To quit, type 'exit'."
 puts "What would you like to do?"
 gets.strip
+break if gets.srtip == "exit"
+end
 end
 
 
