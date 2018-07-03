@@ -11,7 +11,7 @@ def files
 end
 
 def import
-  @files.each do |x|
+  files.each do |x|
     Song.create_from_filename(x)
   end
 end
