@@ -3,3 +3,14 @@
 require_relative '../config/environment'
 
 MusicLibraryController.new.call
+
+class MusicLibraryController
+
+def intialize(path = "./db/mp3s/")
+  MusicImporter.new(path)
+end
+
+
+
+
+end
