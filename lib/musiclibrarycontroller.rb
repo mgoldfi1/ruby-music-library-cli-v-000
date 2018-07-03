@@ -18,7 +18,7 @@ puts "To play a song, enter 'play song'."
 puts "To quit, type 'exit'."
 puts "What would you like to do?"
 gets.strip
-break if gets.srtip == "exit"
+break if gets.strip == "exit"
 end
 end
 
